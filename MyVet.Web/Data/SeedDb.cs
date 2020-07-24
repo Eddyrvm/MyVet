@@ -87,7 +87,7 @@ namespace MyVet.Web.Data
 
         private async Task CheckOwnersAsync()
         {
-            if (_context.Owners.Any())
+            if (!_context.Owners.Any())
             {
                 AddOwner("8989898", "Juan", "Zuluaga", "052685161", "22222222", "Calle jose maria h");
                 AddOwner("000000", "Maria", "Mora", "452151", "1111222", "Calle 10 de agosto");
